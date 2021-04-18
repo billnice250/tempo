@@ -4,7 +4,7 @@ A weather app with flutter
 ## App preview
 ![Inspiration Design](https://github.com/londonappbrewery/Images/blob/master/clima-demo.gif)
 ## Links
-[Android apk](https://github.com/londonappbrewery/Images/blob/master/clima-demo.gif)
+[Android apk](https://github.com/billnice250/tempo/blob/41173a787a99d4e1b07f89d3f45e0e21d13c08b9/build/app/outputs/flutter-apk/app.apk)
 
 
 ## What is included in this project
