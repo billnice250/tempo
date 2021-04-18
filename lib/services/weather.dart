@@ -48,14 +48,14 @@ class WeatherModel {
   }
 
   String getWeatherBackgroundImage(int temp) {
-    if (temp > 20) {
+    if (temp > 17) {
       return 'images/summer_background.jpg';
-    } else if (temp > 15) {
-      return 'images/rainy_background.jpg';
+    } else if (temp > 12) {
+      return 'images/location_background.jpg';
     } else if (temp < 6) {
       return 'images/winter_background.jpg';
     } else {
-      return 'images/location_background.jpg';
+      return 'images/rainy_background.jpg';
     }
   }
 

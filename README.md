@@ -3,6 +3,9 @@ A weather app with flutter
 
 ## App preview
 ![Inspiration Design](https://github.com/londonappbrewery/Images/blob/master/clima-demo.gif)
+## Links
+[Android apk](https://github.com/londonappbrewery/Images/blob/master/clima-demo.gif)
+
 
 ## What is included in this project
 
