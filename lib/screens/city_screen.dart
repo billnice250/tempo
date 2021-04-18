@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tempo/custom_widgets/my_circular_button.dart';
 import 'package:tempo/utilities/constants.dart';
 
 class CityScreen extends StatefulWidget {
@@ -7,6 +8,7 @@ class CityScreen extends StatefulWidget {
 }
 
 class _CityScreenState extends State<CityScreen> {
+  String cityName;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,20 +25,32 @@ class _CityScreenState extends State<CityScreen> {
             children: <Widget>[
               Align(
                 alignment: Alignment.topLeft,
-                child: FlatButton(
-                  onPressed: () {},
-                  child: Icon(
-                    Icons.arrow_back_ios,
-                    size: 50.0,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: CircularButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    iconData: Icons.arrow_back_ios_outlined,
                   ),
                 ),
               ),
               Container(
                 padding: EdgeInsets.all(20.0),
-                child: null,
+                child: TextField(
+                  style: TextStyle(color: Colors.black),
+                  decoration: kTextFieldInputDecolarion,
+                  onChanged: (value) {
+                    setState(() {
+                      cityName = value;
+                    });
+                  },
+                ),
               ),
-              FlatButton(
-                onPressed: () {},
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context, cityName);
+                },
                 child: Text(
                   'Get Weather',
                   style: kButtonTextStyle,
